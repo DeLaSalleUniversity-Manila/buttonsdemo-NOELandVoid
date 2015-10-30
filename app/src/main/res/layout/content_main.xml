@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:drawableRight="@drawable/cp24"
+        android:onClick="onToggle"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cp24"
+        android:onClick="onClickImageButton"
+        android:layout_marginBottom="20dp" />
+
+
+    <Button
+        android:id="@+id/imageTextButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableTop="@drawable/cp24"
+        android:text="drawableTop Button"
+        android:layout_weight="0.07" />
+
+    <Button
+        android:id="@+id/imageTextButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/cp24"
+        android:text="drawableLeft Button"/>
+
+    <Button
+        android:id="@+id/imageTextButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableRight="@drawable/cp24"
+        android:text="drawableRight Button" />
+
+    <Button
+        android:id="@+id/imageTextButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableBottom="@drawable/cp24"
+        android:text="drawableBottom Button" />
+</LinearLayout>
